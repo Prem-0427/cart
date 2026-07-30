@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container{
+    width: 500px;
+    height: max-content;
+   border-radius: 20px;
+        box-shadow: 0px 0px 10px black;
+        border: 2px solid black;
+    text-align: center;
+}
+img{
+    margin: 10px;
+    width: 90%;
+}
+button{
+     height: 40px;
+    width: 100px;
+    margin: 10px;
+    color: black;
+    background-color: bisque;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+</style>
+<body>
+    <div class="container">
+        <img src="image/washing machine.jpg" alt="">
+        <p><b>About:</b>about the washing machine</p>
+        <button id="cart" onclick="addcart()">AddCart</button><br>
+        <button><div id="items"></div> items cart</button>
+    </div>
+</body>
+<script>
+    let values=0;
+    function addcart(){
+        values++;
+        let item=document.getElementById("item");
+        document.getElementById("items").innerHTML=values;
+    
+    }
+</script>
+</html>
